@@ -1,12 +1,16 @@
 body {
-    background-color: #656166;
+    background-color: #a2afc4;
     font-family: 'Great Vibes', cursive;
 }
-
-.well {
-    background-color: #FFFFFF;
+h1{
+    text-align: center;
 }
-
-h1 {
-    font-family: cursive, 'Great Vibes';
+#button{
+    text-align: center;
+}
+#form1{
+    text-align: center;
+}
+#poster{
+  text-align: center;
 }
