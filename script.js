@@ -1,3 +1,6 @@
+// api url =https://api.themoviedb.org/3/search/movie?query=(movieName)&api_key=66284d28433069de242f0f4a5d054488&language=en-US&page=1&include_adult=false
+
+
 $(document).ready(function() {
 
   $("form").submit(compileMovies);
@@ -14,24 +17,15 @@ $(document).ready(function() {
       function(response) {
         console.log(response);
         $(".movieData").show();
-        $("#poster").html("<img src='https://image.tmdb.org/t/p/w500/" + response.results[0].poster_path + "'>");
+        $("#picture").html("<img src='https://image.tmdb.org/t/p/w500/" + response.results[0].poster_path + "'>");
+        $("#title").html("<h3>" + response.results[0].title + "</h3>");
+        $("#description").html("<p>" + response.results[0].overview + "</p>");
+        $("#release_date").html("<p>Release Date: " + response.results[0].release_date + "</p>");
+        $("#original_lang").html("<p>Original Language: " + response.results[0].original_language + "</p>");
+        $("#rating").html("<p>Rating: " + response.results[0].vote_average + "</p>");
+        $("#vote_count").html("<p>Votes: " + response.results[0].vote_count + "</p>");
         
-
+        
       })
-
   }
 })
-
-
-/* $("#submit").click(function() {
-   var Search = $("#input").val();
-
-   var url = "https://api.themoviedb.org/3/search/movie?query=" + input + "&api_key=66284d28433069de242f0f4a5d054488&language=en-US&page=1&include_adult=false";
-
-   $.getJSON(url,
-
-     function(data) {
-       console.log(data);
-         $(".results").append('<div>' + data.results[0].title + '</div>');
-     });
- });*/

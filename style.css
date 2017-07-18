@@ -1,16 +1,52 @@
 body {
-    background-color: #a2afc4;
-    font-family: 'Great Vibes', cursive;
+    /*background-color: #d0e4ed;*/
+    background-color: black;
+    color: white;
+    /*text-align: center;*/
 }
-h1{
+
+h1 {
+    text-align: center;
+    /*font-family: 'Great Vibes', cursive;*/
+    font-family: 'Pacifico', cursive;
+    font-size: 500%;
+    color:#12405b;
+}
+
+h3 {
+    /*font-family: 'Great Vibes', cursive;*/
+}
+
+/*#button {*/
+    /*border-radius:5px;*/
+    /*background-color:#b8e3fc ;*/
+/*}*/
+/*#input{*/
+    /*border-radius: 5px;*/
+    /*color:#5083a0;*/
+    /*background-color:#b8e3fc;*/
+    /*border-color: #b8e3fc;*/
+/*}*/
+
+#form1 {
     text-align: center;
 }
-#button{
+
+#poster {
     text-align: center;
 }
-#form1{
-    text-align: center;
+
+#title {
+    color: black;
+    /*text-align: center;*/
+    font-family: 'Yatra One', cursive;
 }
-#poster{
-  text-align: center;
+
+img{
+    /*height: 200px;*/
+    /*width: 142px;*/
+    height: 150%;
+    width: 160%;
+    margin-left: 100px;
+    
 }
